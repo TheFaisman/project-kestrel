@@ -46,8 +46,8 @@ Token Token_stream::get() {
     char ch;
     cin >> ch;
     switch (ch) {
-    case ';':
-    case 'q':
+    case ';':   // End of an expression
+    case 'q':   // Terminate the program 
     case '(': case ')': case '+': case '-': case '*': case '/':
         return Token{ch};
         break;
